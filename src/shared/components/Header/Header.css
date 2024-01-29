@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+@media all and (min-width: 1024px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    /* flex-flow: row nowrap; */
+    align-items: center;
+    padding: 40px 40px 31px 40px;
+  }
+}
+
+@media all and (min-width: 1540px) {
+  .header {
+    padding: 67px 0;
+  }
+}

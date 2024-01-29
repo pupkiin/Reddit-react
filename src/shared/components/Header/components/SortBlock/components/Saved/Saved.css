@@ -1,0 +1,29 @@
+.Saved {
+  position: relative;
+  font-size: 20px;
+  transition: color .3s ease-in-out;
+}
+
+.Saved::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: var(--orange);
+  right: 0;
+  top: 27px;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+.Saved:hover::after {
+  transform: scaleX(1);
+}
+
+.Saved:focus {
+  color: var(--orange);
+}
+
+.Saved:focus::after {
+  transform: scaleX(1);
+}

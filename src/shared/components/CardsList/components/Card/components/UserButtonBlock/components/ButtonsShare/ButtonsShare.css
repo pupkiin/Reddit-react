@@ -1,0 +1,19 @@
+.ButtonsShare {
+  display: flex;
+  align-items: center;
+}
+
+.ButtonShareLeft {
+  display: flex;
+}
+
+.ButtonShareRight {
+  margin-left: 15px;
+  display: flex;
+}
+
+@media all and (min-width: 1024px) {
+  .ButtonsShare {
+    display: none;
+  }
+}

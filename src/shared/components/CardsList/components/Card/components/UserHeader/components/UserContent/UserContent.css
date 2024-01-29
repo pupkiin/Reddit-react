@@ -1,0 +1,38 @@
+.userContent {
+  display: flex;
+  margin-bottom: 7px;
+  padding: 0 20px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.userContentInfo {
+  display: flex;
+  align-items: center;
+}
+
+.userContentDropdown {
+  position: relative;
+}
+
+.userContentDropdownList {
+  position: absolute;
+  z-index: 5;
+  right: 7px;
+  top: 15px;
+  /* width: 140%;
+  height: 100%; */
+  width: 140px;
+  border-radius: 3px;
+  background: var(--white);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+@media all and (min-width: 1024px) {
+  .userContent {
+    order: 2;
+    padding: 0;
+    margin-left: 38px;
+    margin-bottom: 10px;
+  }
+}

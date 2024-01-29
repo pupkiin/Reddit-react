@@ -1,0 +1,33 @@
+.DropdownComplainButton {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  width: 100%;
+  position: relative;
+  font-size: 12px;
+}
+
+.DropdownComplainButton span {
+  margin-left: 2px;
+  vertical-align: bottom;
+}
+
+.DropdownComplainButton svg {
+  min-width: 14px;
+}
+
+/* .DropdownComplainButton::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  background-color: var(--greyEC);
+  bottom: 0;
+  right: 20px;
+} */
+
+@media all and (min-width: 1024px) {
+  .DropdownComplainButton {
+    font-size: 14px;
+  }
+}

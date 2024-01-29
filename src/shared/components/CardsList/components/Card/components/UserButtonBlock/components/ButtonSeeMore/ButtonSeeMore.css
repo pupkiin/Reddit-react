@@ -1,0 +1,48 @@
+.ButtonSeeMore {
+  margin-right: 37px;
+  display: none;
+}
+
+.SeeMore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  transition: fill .3s ease-in-out;
+}
+
+.SeeMore::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 31px;
+  opacity: 0.6;
+  background-color: var(--greyEC);
+  border-radius: 50%;
+  transform: scale(0);
+  transition: transform .3s ease-in-out;
+}
+
+.SeeMore:hover::after {
+  transform: scale(1);
+}
+
+.SeeMore:hover > svg > circle {
+  fill: var(--greyC4);
+  transition: fill .3s ease-in-out;
+}
+
+@media all and (min-width: 1024px) {
+  .ButtonSeeMore {
+    display: block;
+  }
+}
+
+
+
+

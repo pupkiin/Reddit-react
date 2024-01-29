@@ -1,0 +1,46 @@
+.TextContent {
+  overflow: hidden;
+  /* display: block; */
+  white-space: wrap;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  height: 2em;
+  line-height: 16px;
+  padding: 0 20px 0 20px;
+  margin-bottom: 13px;
+  /* flex-flow: row wrap; */
+  /* width: 100%; */
+  font-size: 16px;
+  font-weight: 400;
+  transition: color .3s ease-in-out;
+  position: relative;
+}
+
+.TextContent:hover {
+  color: var(--orange);
+}
+
+@media all and (min-width: 1024px) {
+  .TextContent {
+    padding: 0;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    /* -webkit-box-orient: vertical; */
+    /* flex-basis: 540px; */
+    line-height: 20px;
+    min-width: 540px;
+    height: 19px;
+    order: 1;
+    margin: 0 0 10px 38px;
+    font-size: 20px;
+  }
+}
+
+@media all and (min-width: 1540px) {
+  .textContent {
+    max-width: 672px;
+  }
+}

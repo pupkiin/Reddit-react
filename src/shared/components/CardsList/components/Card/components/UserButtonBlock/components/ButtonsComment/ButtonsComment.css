@@ -1,0 +1,19 @@
+.ButtonsComment {
+  display: flex;
+  align-items: center;
+}
+
+.CommentButton {
+  margin-right: 5px;
+  display: flex;
+}
+
+.CommentCount {
+  color: var(--greyC4);
+}
+
+@media all and (min-width: 1024px) {
+  .ButtonsComment {
+    display: none;
+  }
+}

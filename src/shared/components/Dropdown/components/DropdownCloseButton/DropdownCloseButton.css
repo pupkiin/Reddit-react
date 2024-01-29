@@ -1,0 +1,18 @@
+.DropdownCloseButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 12px 20px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background-color: var(--greyD9);
+  font-size: 12px;
+}
+
+@media all and (min-width: 1024px) {
+  .DropdownCloseButton {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,28 @@
+.DropdownHideButton {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  width: 100%;
+  position: relative;
+  font-size: 12px;
+}
+
+.DropdownHideButton span {
+  margin-left: 5px;
+}
+
+.DropdownHideButton::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  background-color: var(--greyEC);
+  bottom: 0;
+  right: 20px;
+}
+
+@media all and (min-width: 1024px) {
+  .DropdownHideButton {
+    font-size: 14px;
+  }
+}

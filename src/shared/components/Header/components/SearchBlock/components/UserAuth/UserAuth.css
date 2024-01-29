@@ -1,0 +1,79 @@
+.UserAuthNick {
+  display: none;
+}
+
+.UserAuthAnonim {
+  display: none;
+}
+
+.UserAuthLogo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.UserAuthAvatar {
+  max-width: 30px;
+  max-height: 30px;
+  border-radius: 50%;
+}
+
+.UserAuth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 14px;
+}
+
+.UserAuth:hover span {
+  color: var(--orange);
+}
+
+.UserAuth:hover div > * {
+  border: 1px solid var(--orange);
+  box-shadow: 0 0 0 1px var(--orange);
+}
+
+.UserAuth div > * {
+  /* transition: border .1s ease-in-out; */
+  border-radius: 100%;
+}
+
+@media all and (min-width: 1024px) {
+  .UserAuth {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 0;
+  }
+
+  .UserAuthLogo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .UserAuthAvatar {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+  }
+
+  .UserAuthNick {
+    display: block;
+    color: var(--orange);
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 13px;
+    /* transition: color .1s ease-in-out; */
+  }
+
+  .UserAuthAnonim {
+    display: block;
+    color: var(--grey99);
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 13px;
+    /* transition: color .3s ease-in-out; */
+  }
+}

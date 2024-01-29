@@ -1,0 +1,20 @@
+.HeaderComments {
+  display: none;
+}
+
+.HeaderCommentButton {
+  display: flex;
+}
+
+.HeaderCommentText {
+  color: var(--grey99);
+  margin-left: 4px;
+}
+
+@media all and (min-width: 1024px) {
+  .HeaderComments {
+    display: flex;
+    order: 3;
+    margin-left: 38px;
+  }
+}

@@ -1,0 +1,52 @@
+.UserMessages {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 32px;
+}
+
+.UserMessages svg {
+  width: 13px;
+  height: 10px;
+}
+
+.UserMessages::before {
+  position: absolute;
+  content: "3";
+  display: flex;
+  font-size: 9px;
+  justify-content: center;
+  align-items: center;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: var(--orange);
+  color: var(--white);
+  right: 18px;
+}
+
+@media all and (min-width: 1024px) {
+  .UserMessages {
+    margin-left: 0;
+  }
+
+  .UserMessages svg {
+    width: auto;
+    height: auto;
+  }
+
+  .UserMessages::before {
+    position: absolute;
+    content: "3";
+    display: flex;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--orange);
+    color: var(--white);
+    right: 32px;
+  }
+}

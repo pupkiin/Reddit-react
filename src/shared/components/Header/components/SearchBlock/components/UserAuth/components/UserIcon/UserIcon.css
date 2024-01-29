@@ -1,0 +1,11 @@
+.UserIcon {
+  width: 30px;
+  height: 30px;
+}
+
+@media all and (min-width: 1024px) {
+  .UserIcon {
+    width: 50px;
+    height: 50px;
+  }
+}

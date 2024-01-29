@@ -1,0 +1,45 @@
+.ButtonsLikes {
+  display: flex;
+  align-items: center;
+}
+
+.LikeUp {
+  margin-right: 5px;
+}
+
+.LikeDown {
+  margin-left: 5px;
+}
+
+.LikesCount {
+  color: var(--greyC4);
+}
+
+@media all and (min-width: 1024px) {
+  .ButtonsLikes {
+    flex-direction: column;
+  }
+
+  .LikeUp {
+    margin-right: 0;
+  }
+
+  .LikeDown {
+    margin-left: 0;
+  }
+
+  .LikesCount {
+    padding: 5px 0 5px 0;
+  }
+}
+
+/* @media all and (min-width: 1540px) { */
+.ButtonsLikes > button.LikeUp:hover > svg > path {
+  fill: var(--green);
+}
+
+.ButtonsLikes > button.LikeDown:hover > svg > path {
+  fill: var(--orange);
+}
+/* } */
+
